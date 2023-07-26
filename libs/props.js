@@ -1,0 +1,5 @@
+export const stringProp = (z = '') => ({ type: String, default: z })
+export const numberProp = (z = 0) => ({ type: Number, default: z })
+export const arrayProp = (z = []) => ({ type: Array, default: () => z })
+export const objectProp = (z = {}) => ({ type: Object, default: () => z })
+export const booleanProp = (z = false) => ({ type: Boolean, default: z })

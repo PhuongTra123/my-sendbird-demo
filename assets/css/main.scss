@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.fade-left-enter-active {
+  animation: bounce-left 0.3s;
+}
+.fade-left-leave-active {
+  animation: bounce-left 0.3s reverse;
+}
+
+@keyframes bounce-left {
+  0% {
+    transform: translateX(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
