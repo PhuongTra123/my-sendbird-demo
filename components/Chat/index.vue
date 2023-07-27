@@ -111,8 +111,7 @@ export default {
     async initServiceInstance() {
       try {
         this.loading = true;
-        const res = await sb.connect(AUTH.userId, AUTH.token);
-        console.log("res", res);
+        const res = await sb.connect("tra_tran_123");
         await this.getChannels();
         this.groupChannelHandler = new GroupChannelHandler({
           onMessageReceived: (channel, message) => {
